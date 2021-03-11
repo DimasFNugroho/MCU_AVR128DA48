@@ -5,7 +5,7 @@ typedef unsigned char uchar;
  * DESCRIPTION:
  * set to 8-N-2 format
  * set baudrate
- * 
+ *
  * CONFUSION:
  * What is myErrors ?
  */
@@ -17,7 +17,7 @@ void mcu_uart_init(uchar ch);
  * The most significant bits are set to zero.
  * Only the Less Significant Bits are used as baudrate settings.
  * Set baudrate based on "long baud".
- * 
+ *
  * CONFUSION:
  * what is ch ? it is not used anywhere in this function. Why?
  */
@@ -28,7 +28,7 @@ void mcu_uart_set_baud(uchar ch, long baud);
  * set variable error equals to the global variable myErrors.
  * the global variable is set to zero.
  * the function return the value of the variable "errors"
- * 
+ *
  * CONFUSION:
  * what is ch ? it is not used anywhere in this function. Why?
  */
@@ -37,8 +37,8 @@ uchar mcu_uart_get_errors(uchar ch);
 /**
  * DESCRIPTION:
  * Set the parity of the uart based on the value of "uchar parity".
- * 
- * 
+ *
+ *
  * CONFUSION:
  * what is ch ? it is not used anywhere in this function. Why?
  *
